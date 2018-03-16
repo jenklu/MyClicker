@@ -13,7 +13,9 @@ This is the entry point for the application, and if the teacher desires to use t
 
 `$ python3 main_menu.py`
 
-The main menu of this application presents the teacher with two options. The first is to create a presentation, which consistsof a series of questions and answers. The second is to load that presentation and present it to the class with real-timepolling of the class. The main menu also contains a file entry box. The file selected in this box is either the file createdby content creation mode if the teacher selects content creation mode, or the presentation opened if the teacher selectspresentation mode.
+Note that you need to use Python >=3.5 for this project, as it uses Python's `asyncio` library as of the 3.5 update
+
+The main menu of this application presents the teacher with two options. The first is to create a presentation, which consistsof a series of questions and answers. The second is to load that presentation and present it to the class with real-timepolling of the class. The main menu also contains a file entry box. The file selected in this box is either the file created by content creation mode if the teacher selects content creation mode, or the presentation opened if the teacher selectspresentation mode.
 
 ### Content Creation Mode - ContentCreation.py
 ContentCreation.py is the file which controls the content-creation side of the application. This application enables teachers to enter in question text, as well as the correct answer and incorrect answers. Teachers can go back and forth between questions in a given session in order to edit previously created questions. When the teacher clicks "Done Creating Questions", the questions they created, which during creation mode are saved into a Python dictionary, are written into a JSON file so that they can be loaded by Presentation mode
